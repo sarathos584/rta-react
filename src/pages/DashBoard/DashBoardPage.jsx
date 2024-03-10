@@ -1,7 +1,22 @@
 import React, { useState } from 'react';
 import './DashBoardPage.css'; // Importing CSS file for styling
+import FilePicker from '../../services/fileUpload';
 
 function DashBoardPage() {
+
+
+
+  async function uploadFiles(event) {
+    const files = event.target.files;
+console.log(files,'files')
+    // const files = document.querySelector(".single").files;
+    const result = await FilePicker(files);
+    console.log(result,'result')
+    document.querySelector(".single").value = null;
+  }
+
+
+
   const [pdfs, setPdfs] = useState([]);
   const [uploading, setUploading] = useState(false);
   const [error, setError] = useState('');
@@ -16,32 +31,8 @@ function DashBoardPage() {
     return Promise.resolve(dummyPdfs);
   };
 
-  const uploadPdf = (file) => {
-    // Simulating uploading a PDF file
-    setUploading(true);
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        setUploading(false);
-        resolve('PDF uploaded successfully');
-      }, 2000); // Simulating a delay of 2 seconds
-    });
-  };
 
-  const handleFileChange = (event) => {
-    const file = event.target.files[0];
-    // Assuming the file object contains the necessary data (e.g., name)
-    uploadPdf(file)
-      .then(() => {
-        // After successful upload, fetch the updated list of PDFs
-        return fetchPdfs();
-      })
-      .then((newPdfs) => {
-        setPdfs(newPdfs);
-      })
-      .catch((error) => {
-        setError('Error uploading PDF: ' + error.message);
-      });
-  };
+
 
   return (
     <div className="dashboard-container">
@@ -53,7 +44,7 @@ function DashBoardPage() {
       </ul>
       <div className="upload-section">
         <h2>Upload PDF</h2>
-        <input type="file" onChange={handleFileChange} />
+        <input type="file" onChange={uploadFiles} className='single' />
         {uploading && <div>Uploading...</div>}
         {error && <div className="error-message">Error: {error}</div>}
       </div>

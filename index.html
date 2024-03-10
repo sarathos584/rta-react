@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" data-rsevent-id="rs_90210">
 
 <head>
   <meta charset="UTF-8" />
@@ -13,13 +13,13 @@
   <link id="rsmod_Styles" type="text/css" rel="stylesheet" href="/public/assets_new/ReadSpeaker.Styles.css">
   <link href="/public/assets_new/print.css" media="print" rel="stylesheet">
   <link href="/public/assets_new/jquery-ui.css" rel="stylesheet" type="text/css">
-<link href="/public/assets_new/head_foot.css" rel="stylesheet" type="text/css">
-<link href="/public/assets_new/rta.css" rel="stylesheet" type="text/css">
-<link href="/public/assets_new/colorbox.css" type="text/css" rel="stylesheet">
-<link href="/public/assets_new/myEcertificate.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="/public/assets_new/bootstrap.css">
+  <link href="/public/assets_new/head_foot.css" rel="stylesheet" type="text/css">
+  <link href="/public/assets_new/rta.css" rel="stylesheet" type="text/css">
+  <link href="/public/assets_new/colorbox.css" type="text/css" rel="stylesheet">
+  <link href="/public/assets_new/myEcertificate.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/public/assets_new/bootstrap.css">
 
-    <link rel="stylesheet" href="/public/assets_new/header_footer_style.css">
+  <link rel="stylesheet" href="/public/assets_new/header_footer_style.css">
 
 
 
@@ -29,7 +29,7 @@
   <title>Vite + React</title>
 </head>
 
-<body>
+<body onload="doOnload();" data-rsevent-id="rs_473197">
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>
   <script>
@@ -48,23 +48,40 @@
 
 
   </script>
+  
+  <script>
 
-  
-  
-  
-<script>
 
-  $(document).ready(function(){
-      $("link",parent.document).each(function(index){
-          if($(this).attr('href') == 'revamp/assets_new_en/css/blind.html'){
-              $('head').append('<link rel="stylesheet" type="text/css" href="revamp/assets_new_en/css/blind.html"/>');
-              $('b').css("color", "yellow");
-              $('#ownedByAnIndividualMsg').css("color", "white");
-              $('#notOwnedMsg').css("color", "white");
-          }
+    var MCC_Mode = document.getElementsByClassName('main-page').length + document.getElementsByClassName('performance-evaluation').length ;
+
+    if(MCC_Mode === 0){
+        document.write('<link rel="stylesheet" href="/public/traffic.rta.ae/trfesrv/revamp/common/header_footer_assets/css/bootstrap.css" />');
+    }
+
+    $(function(){
+        $(".footerRTA").appendTo("body");
+
+    });
+
+
+</script>
+
+
+
+
+  <script>
+
+    $(document).ready(function () {
+      $("link", parent.document).each(function (index) {
+        if ($(this).attr('href') == 'revamp/assets_new_en/css/blind.html') {
+          $('head').append('<link rel="stylesheet" type="text/css" href="revamp/assets_new_en/css/blind.html"/>');
+          $('b').css("color", "yellow");
+          $('#ownedByAnIndividualMsg').css("color", "white");
+          $('#notOwnedMsg').css("color", "white");
+        }
       });
-  });
-  
+    });
+
   </script>
 
 
@@ -83,7 +100,7 @@
   <script type="text/javascript" async="" src="https://traffic.rta.ac/assets_new/js(1)"></script>
   <script type="text/javascript" async="" src="/public/assets_new/hotjar-1165416.js"></script>
   <script type="text/javascript" async="" src="/public/assets_new/analytics.js"></script>
-  <script async="" src="../../assets_new/gtm.js"></script>
+  <script async="" src="/public/assets_new/gtm.js"></script>
   <script type="text/javascript" src="/public/assets_new/common.js"></script>
   <script type="text/javascript" src="/public/assets_new/svgxuse.min.js"></script>
   <script src="/public/assets_new/jquery-2.2.4.js"></script>
@@ -95,34 +112,35 @@
 
   <script>
     $(function () {
-    if ($('.headerRTA').parents('.container').length > 0) {
+      if ($('.headerRTA').parents('.container').length > 0) {
         resize_Header();
         if ($('.headerRTA').parents('.container').length > 1) {
-            var el = $('.headerRTA').parents('.container')[1];
-            $(el).css({"padding-left": 0, "padding-right": 0});
+          var el = $('.headerRTA').parents('.container')[1];
+          $(el).css({ "padding-left": 0, "padding-right": 0 });
         }
-    }
-    $(window).bind('scroll', function () {
+      }
+      $(window).bind('scroll', function () {
         if ($(window).scrollTop() > 100) {
-            $('.headerRTA .menuChild').addClass('fixed');
+          $('.headerRTA .menuChild').addClass('fixed');
         } else {
-            $('.headerRTA .menuChild').removeClass('fixed');
+          $('.headerRTA .menuChild').removeClass('fixed');
         }
-    });
-    $(".headerRTA .menuChild .hide-mobile > li").mouseover(function () {
+      });
+      $(".headerRTA .menuChild .hide-mobile > li").mouseover(function () {
         $('.overflow').show();
-    });
-    $(".headerRTA .menuChild .hide-mobile > li").mouseout(function () {
+      });
+      $(".headerRTA .menuChild .hide-mobile > li").mouseout(function () {
         $('.overflow').hide();
+      });
     });
-});
 
 
 
   </script>
-  
+
 
   <script type="text/javascript" src="/public/assets_new/bootstrap.min.js"></script>
+    
 
 </body>
 

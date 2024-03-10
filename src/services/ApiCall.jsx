@@ -1,13 +1,13 @@
 import axios from "axios";
-import { BaseUrl } from "./BaseUrl";
+import { Base_URL } from "./BaseUrl";
 
 export const ApiCall = async (method, endPoint, data, params, is_formdata) => {
   var headers = {
     "Content-Type": is_formdata ? "multipart/form-data" : "application/json",
-    Authorization: "Bearer " + localStorage.getItem("token"),
+    // Authorization: "Bearer " + localStorage.getItem("token"),
     platform: "web",
   };
-  var url = BaseUrl + endPoint;
+  var url = Base_URL + endPoint;
 
   try {
     const res = await axios({
@@ -18,6 +18,7 @@ export const ApiCall = async (method, endPoint, data, params, is_formdata) => {
       headers,
     });
     var response = { status: true, message: res.data };
+    console.log(response)
 
     return response;
   } catch (error) {
