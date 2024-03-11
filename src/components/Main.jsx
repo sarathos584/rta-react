@@ -1,6 +1,34 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { ApiCall } from "../services/ApiCall";
+import { useLocation } from 'react-router-dom';
+
 
 function Main() {
+  const [path, setPath] = useState(null)
+  const location = useLocation();
+  const queryParams = new URLSearchParams(location.search);
+  const index = queryParams.get('index');
+  console.log(index,'index')
+
+
+
+  useEffect(() => {
+    const handleSubmit = async () => {
+      try {
+        const res=await ApiCall('post','/api/v1/rta/client/download',{index:index})
+        console.log(res,'res')
+        setPath(res?.message?.data)
+
+      } catch (error) {
+        console.log(error)
+      }
+    };
+    handleSubmit()
+  }, [])
+
+
+  
+  
   return (
     <div className="container">
       <br />

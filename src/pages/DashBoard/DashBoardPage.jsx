@@ -4,32 +4,26 @@ import FilePicker from '../../services/fileUpload';
 
 function DashBoardPage() {
 
-
-
-  async function uploadFiles(event) {
-    const files = event.target.files;
-console.log(files,'files')
-    // const files = document.querySelector(".single").files;
-    const result = await FilePicker(files);
-    console.log(result,'result')
-    document.querySelector(".single").value = null;
-  }
-
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    try {
+      const files = document.querySelector(".single").files;
+      const result = await FilePicker(files, index, link);
+      console.log(result, 'result');
+      document.querySelector(".single").value = null;
+    } catch (error) {
+      setError(error.message);
+    }
+  };
 
 
   const [pdfs, setPdfs] = useState([]);
   const [uploading, setUploading] = useState(false);
   const [error, setError] = useState('');
+  const [index, setIndex] = useState('');
+  const [link, setLink] = useState('');
+  const [path, setPath] = useState('');
 
-  const fetchPdfs = () => {
-    // Simulating fetching PDFs from the server
-    const dummyPdfs = [
-      { id: 1, name: 'SamplePDF1.pdf' },
-      { id: 2, name: 'SamplePDF2.pdf' },
-      { id: 3, name: 'SamplePDF3.pdf' }
-    ];
-    return Promise.resolve(dummyPdfs);
-  };
 
 
 
@@ -43,10 +37,17 @@ console.log(files,'files')
         ))}
       </ul>
       <div className="upload-section">
+      <form onSubmit={handleSubmit} className="upload-section">
         <h2>Upload PDF</h2>
-        <input type="file" onChange={uploadFiles} className='single' />
+        <input type="file" className='single' />
+        <input type="text" value={index} onChange={(e)=>setIndex(e.target.value)} placeholder="Index" />
+        <input type="text" value={link} onChange={(e)=>setLink(e.target.value)} placeholder="Link" />
+        <input type="text" value={path} onChange={(e)=>setPath(e.target.value)} placeholder="path" />
+
+        <button type="submit">Submit</button>
         {uploading && <div>Uploading...</div>}
         {error && <div className="error-message">Error: {error}</div>}
+      </form>
       </div>
     </div>
   );

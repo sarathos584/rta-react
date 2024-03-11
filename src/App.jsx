@@ -15,7 +15,7 @@ function App() {
       <Route path={'/login'} element={<LoginPage />} />
       <Route path={'/DashBoard'} element={<DashBoardPage />} />
 
-      <Route path={'/'} element={<HomePage />} />
+      <Route path={'/:index?'} element={<HomePage />} />
 
     </Routes>
   );

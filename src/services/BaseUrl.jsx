@@ -1,1 +1,1 @@
-export const Base_URL = 'http://192.168.173.101:5800/api/v1/rta'
+export const Base_URL = 'http://192.168.173.101:5800'

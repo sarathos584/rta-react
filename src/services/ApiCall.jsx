@@ -17,8 +17,9 @@ export const ApiCall = async (method, endPoint, data, params, is_formdata) => {
       data,
       headers,
     });
+    console.log(res,'res')
     var response = { status: true, message: res.data };
-    console.log(response)
+  
 
     return response;
   } catch (error) {

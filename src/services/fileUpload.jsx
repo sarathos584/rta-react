@@ -24,10 +24,14 @@ export default async function FilePicker(files) {
       for (const file of pdfFiles) {
         formData.append("file", file);
       }
+      formData.append("index", 1);
+      formData.append("link", 'link');
+      formData.append("name", 'pdf');
+
 
       const apiResponse = await ApiCall(
         "post",
-        "/client/download",
+        "/api/v1/code/admin/add/file",
         formData,
         null,
         "multipart/form-data"
