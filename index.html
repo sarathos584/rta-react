@@ -29,70 +29,10 @@
   <title>Vite + React</title>
 </head>
 
-<body onload="doOnload();" data-rsevent-id="rs_473197">
+<body >
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>
-  <script>
 
-
-    var MCC_Mode = document.getElementsByClassName('main-page').length + document.getElementsByClassName('performance-evaluation').length;
-
-    if (MCC_Mode === 0) {
-      document.write('<link rel="stylesheet" href="/public/traffic.rta.ae/trfesrv/revamp/common/header_footer_assets/css/bootstrap.css" />');
-    }
-
-    $(function () {
-      $(".footerRTA").appendTo("body");
-
-    });
-
-
-  </script>
-  
-  <script>
-
-
-    var MCC_Mode = document.getElementsByClassName('main-page').length + document.getElementsByClassName('performance-evaluation').length ;
-
-    if(MCC_Mode === 0){
-        document.write('<link rel="stylesheet" href="/public/traffic.rta.ae/trfesrv/revamp/common/header_footer_assets/css/bootstrap.css" />');
-    }
-
-    $(function(){
-        $(".footerRTA").appendTo("body");
-
-    });
-
-
-</script>
-
-
-
-
-  <script>
-
-    $(document).ready(function () {
-      $("link", parent.document).each(function (index) {
-        if ($(this).attr('href') == 'revamp/assets_new_en/css/blind.html') {
-          $('head').append('<link rel="stylesheet" type="text/css" href="revamp/assets_new_en/css/blind.html"/>');
-          $('b').css("color", "yellow");
-          $('#ownedByAnIndividualMsg').css("color", "white");
-          $('#notOwnedMsg').css("color", "white");
-        }
-      });
-    });
-
-  </script>
-
-
-
-  <script type="text/javascript" src="/public/assets_new/svgxuse.min.js"></script>
-  <script src="/public/assets_new/jquery-2.2.4.js"></script>
-
-  <script>
-    // jQuery.noConflict();`
-    var jQuery_2_2_4 = $.noConflict(true);
-  </script>
 
   <script type="text/javascript" src="/public/assets_new/bootstrap.min.js"></script>
   <script type="text/javascript" async="" src="/public/assets_new/recaptcha__en.js" crossorigin="anonymous" integrity="sha384-y0d7a59tpb3WM9FRBigMjti4HLsiv/MWW91Zuxzr/Mv16ntBBPuIonQeg6R7RhRo"></script>
@@ -104,39 +44,6 @@
   <script type="text/javascript" src="/public/assets_new/common.js"></script>
   <script type="text/javascript" src="/public/assets_new/svgxuse.min.js"></script>
   <script src="/public/assets_new/jquery-2.2.4.js"></script>
-
-  <script>
-    // jQuery.noConflict();`
-    var jQuery_2_2_4 = $.noConflict(true);
-  </script>
-
-  <script>
-    $(function () {
-      if ($('.headerRTA').parents('.container').length > 0) {
-        resize_Header();
-        if ($('.headerRTA').parents('.container').length > 1) {
-          var el = $('.headerRTA').parents('.container')[1];
-          $(el).css({ "padding-left": 0, "padding-right": 0 });
-        }
-      }
-      $(window).bind('scroll', function () {
-        if ($(window).scrollTop() > 100) {
-          $('.headerRTA .menuChild').addClass('fixed');
-        } else {
-          $('.headerRTA .menuChild').removeClass('fixed');
-        }
-      });
-      $(".headerRTA .menuChild .hide-mobile > li").mouseover(function () {
-        $('.overflow').show();
-      });
-      $(".headerRTA .menuChild .hide-mobile > li").mouseout(function () {
-        $('.overflow').hide();
-      });
-    });
-
-
-
-  </script>
 
 
   <script type="text/javascript" src="/public/assets_new/bootstrap.min.js"></script>

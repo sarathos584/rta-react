@@ -1,26 +1,29 @@
-import React, { useState } from 'react';
-import axios from 'axios';
+import React, { useState } from "react";
+import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { ApiCall } from "../services/ApiCall";
 
 function LoginPage() {
-    const navigate = useNavigate()
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-  const [errorMessage, setErrorMessage] = useState('');
+  const navigate = useNavigate();
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleLogin = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post('your_login_api_endpoint', {
+      const response = await ApiCall("post", "/api/v1/code/admin/login", {
         username,
         password,
       });
-      const { token } = response.data; 
-      localStorage.setItem('token', token); 
-      navigate('/dashboard');
+      console.log(response, "response");
+      if(response.status){
+        const { access_token } = response.message;
+        localStorage.setItem("token", access_token);
+        navigate("/dashboard");
+      }
     } catch (error) {
-      console.error('Login failed:', error);
-      setErrorMessage('Invalid username or password');
+      console.error("Login failed:", error);
     }
   };
 
@@ -48,7 +51,9 @@ function LoginPage() {
             style={styles.input}
           />
         </div>
-        <button type="submit" style={styles.button}>Login</button>
+        <button type="submit" style={styles.button}>
+          Login
+        </button>
       </form>
       {errorMessage && <div style={styles.errorMessage}>{errorMessage}</div>}
     </div>
@@ -57,43 +62,43 @@ function LoginPage() {
 
 const styles = {
   container: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-    minHeight: '100vh', // Ensure the form fills the entire viewport height
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    minHeight: "100vh", // Ensure the form fills the entire viewport height
   },
   heading: {
-    marginBottom: '20px',
+    marginBottom: "20px",
   },
   form: {
-    width: '300px', // Adjust the width of the form as needed
+    width: "300px", // Adjust the width of the form as needed
   },
   inputGroup: {
-    marginBottom: '15px',
+    marginBottom: "15px",
   },
   label: {
-    marginBottom: '5px',
-    fontWeight: 'bold',
+    marginBottom: "5px",
+    fontWeight: "bold",
   },
   input: {
-    width: '100%',
-    padding: '10px',
-    borderRadius: '5px',
-    border: '1px solid #ccc',
+    width: "100%",
+    padding: "10px",
+    borderRadius: "5px",
+    border: "1px solid #ccc",
   },
   button: {
-    width: '100%',
-    padding: '10px',
-    borderRadius: '5px',
-    border: 'none',
-    backgroundColor: '#007bff',
-    color: '#fff',
-    cursor: 'pointer',
+    width: "100%",
+    padding: "10px",
+    borderRadius: "5px",
+    border: "none",
+    backgroundColor: "#007bff",
+    color: "#fff",
+    cursor: "pointer",
   },
   errorMessage: {
-    color: 'red',
-    marginTop: '10px',
+    color: "red",
+    marginTop: "10px",
   },
 };
 

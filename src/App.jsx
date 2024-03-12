@@ -4,6 +4,7 @@ import DashBoardPage from "./pages/DashBoard/DashBoardPage";
 import HomePage from "./pages/HomePage";
 import { Route, Routes } from "react-router-dom";
 import LoginPage from "./pages/LoginPage";
+import 'bootstrap/dist/css/bootstrap.css';
 
 
 function App() {

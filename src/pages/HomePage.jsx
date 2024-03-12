@@ -7,13 +7,13 @@ function HomePage() {
   return (
     <>
     
-      <form name="myECertificatesForm" method="post" action="#">
+      {/* <form name="myECertificatesForm" method="post" action={undefined}> */}
         <div className="container">
           <Header />
           <Main />
         </div>
     
-      </form>
+      {/* </form> */}
       <div className="">
       <Footer />
 

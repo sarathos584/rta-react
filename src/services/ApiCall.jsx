@@ -23,15 +23,7 @@ export const ApiCall = async (method, endPoint, data, params, is_formdata) => {
 
     return response;
   } catch (error) {
-    if (
-      error?.response.status &&
-      error?.response.status === 401 &&
-      localStorage.getItem("token")
-    ) {
-      localStorage.clear();
-      window.location.href = "/login";
-      return;
-    }
+    console.log(error)
    
 
     return error;
