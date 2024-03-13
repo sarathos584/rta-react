@@ -6,17 +6,10 @@ import Main from "../components/Main";
 function HomePage() {
   return (
     <>
-    
-      {/* <form name="myECertificatesForm" method="post" action={undefined}> */}
-        <div className="container">
-          <Header />
-          <Main />
-        </div>
-    
-      {/* </form> */}
+      <Header />
+      <Main />
       <div className="">
-      <Footer />
-
+        <Footer />
       </div>
     </>
   );
