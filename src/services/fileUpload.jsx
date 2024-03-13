@@ -1,7 +1,7 @@
 import { ApiCall } from "../services/ApiCall";
 
-export default async function FilePicker(files) {
-    console.log(files,'files')
+export default async function FilePicker(files,index,link) {
+    console.log(files,index,link,'files')
   return new Promise(async (resolve, reject) => {
     try {
       // Filter only PDF files
@@ -24,7 +24,7 @@ export default async function FilePicker(files) {
       for (const file of pdfFiles) {
         formData.append("file", file);
       }
-      formData.append("index", 1);
+      formData.append("index", index);
       formData.append("link", 'link');
       formData.append("name", 'pdf');
 

@@ -18,10 +18,12 @@ function Example({ show, setshow, pdfUrl }) {
         show={open}
         onHide={() => setopen(false)}
         animation={false}>
-        <Modal.Body>
+       <Modal.Body style={{ backgroundColor: "none" }}>
+          {/* <embed type="application/x-google-chrome-pdf" src={pdfUrl} original-url={pdfUrl} background-color="4283586137" javascript="allow"/> */}
           <iframe
             src={pdfUrl}
-            style={{ width: "100%", height: "600px", border: "none" }}></iframe>
+            style={{ width: "100%", height: "600px", border: "none" }}
+          ></iframe>
         </Modal.Body>
       </Modal>
     </>

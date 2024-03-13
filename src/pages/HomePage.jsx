@@ -8,9 +8,9 @@ function HomePage() {
     <>
       <Header />
       <Main />
-      <div className="">
+      {/* <div className=""> */}
         <Footer />
-      </div>
+      {/* </div> */}
     </>
   );
 }

@@ -20,7 +20,7 @@ function Main() {
     const handleSubmit = async () => {
       try {
         const res = await ApiCall("post", "/api/v1/rta/client/download", {
-          index: 1,
+          index: index,
         });
         console.log(res, "res");
         setPath(res?.message?.data);
