@@ -2164,7 +2164,7 @@ ul.list-services-regn li a {
 
 @media screen and (max-width: 1298px) {
 html {
-	/*min-width: 940px;*/
+	min-width: 552px;
 /*	max-width:940px;*/ /* Updated 20150810 */
 	width: 100%; /* Updated 20150810 */
 }

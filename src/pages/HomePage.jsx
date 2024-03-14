@@ -6,9 +6,8 @@ import Main from "../components/Main";
 function HomePage() {
   return (
     <>
-
-      <Header />
       <div className="container">
+        <Header />
         <Main />
 
       </div>
