@@ -7,7 +7,7 @@ function Header() {
 
 
     <div className="headerRTA" >
-      <div className="">
+      <div className="container">
         <div className="logosSection">
           <a href="https://www.digitaldubai.ae/ar" title="Government of Dubai" className="governmentDubai _updated">
             <img src="/public/assets_new/government-dubai.png" />
