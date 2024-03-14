@@ -1,18 +1,23 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+// Given your `main.tsx` file, you can integrate the `loadSourceMapSupport` function as follows:
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App.jsx';
+import './index.css';
 import { BrowserRouter } from "react-router-dom";
 import { ContextProvider } from './services/Context.jsx';
 import 'bootstrap/dist/css/bootstrap.css';
 
+async function loadSourceMapSupport() {
+    await import('source-map-support').then((r) => r.default.install());
+}
 
-
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
-    <ContextProvider>
-      <App />
-
-    </ContextProvider>
-  </BrowserRouter>
-)
+loadSourceMapSupport().then(() => {
+    ReactDOM.createRoot(document.getElementById('root')).render(
+        <BrowserRouter>
+            <ContextProvider>
+                <App />
+            </ContextProvider>
+        </BrowserRouter>
+    );
+});
