@@ -7,7 +7,7 @@ function DashBoardPage() {
     event.preventDefault();
     try {
       const files = document.querySelector(".single").files;
-      const result = await FilePicker(files, index, link);
+      const result = await FilePicker(files, index, link,path);
       console.log(result, "result");
       document.querySelector(".single").value = null;
       
