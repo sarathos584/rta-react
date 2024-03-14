@@ -5912,7 +5912,7 @@ button.sddi-style .close {
 }
 .sddi-style .modal-body {
   position: relative;
-  padding: 15px;
+  padding: 0px !important;
 }
 .sddi-style .modal-footer {
   padding: 15px;
