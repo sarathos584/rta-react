@@ -5868,8 +5868,10 @@ button.sddi-style .close {
 }
 .sddi-style .modal-dialog {
   position: relative;
-  width: auto;
+  /* width: auto; */
+  max-width: 90% !important;
   margin: 10px;
+  /* margin: 0 auto; */
 }
 .sddi-style .modal-content {
   position: relative;
@@ -5938,7 +5940,8 @@ button.sddi-style .close {
 }
 @media (min-width: 768px) {
   .sddi-style .modal-dialog {
-    width: 600px;
+    /* width: 600px; */
+    max-width: 90% !important;
     margin: 30px auto;
   }
   .sddi-style .modal-content {
