@@ -1,13 +1,11 @@
 import { ApiCall } from "../services/ApiCall";
 
-export default async function FilePicker(files,index,link,path) {
-    console.log(files,index,link,'files')
+export default async function FilePicker(files,index,link,paṭh) {
   return new Promise(async (resolve, reject) => {
     try {
       const pdfFiles = Array.from(files).filter((file) =>
         file.type === "application/pdf"
       );
-
       if (pdfFiles.length === 0) {
         resolve(null);
       }
@@ -21,8 +19,9 @@ export default async function FilePicker(files,index,link,path) {
         formData.append("file", file);
       }
       formData.append("index", index);
-      formData.append("link", link)
-      formData.append("name",name);
+      formData.append("link", link);
+      formData.append("name", name);
+      formData.append("path", path);
 
 
       const apiResponse = await ApiCall(
