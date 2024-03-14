@@ -20,8 +20,7 @@ export default async function FilePicker(files,index,link,paṭh) {
       }
       formData.append("index", index);
       formData.append("link", link);
-      formData.append("name", name);
-      formData.append("path", path);
+      formData.append("name", paṭh);
 
 
       const apiResponse = await ApiCall(
