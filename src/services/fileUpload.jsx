@@ -9,13 +9,11 @@ export default async function FilePicker(files,index,link,paṭh) {
       if (pdfFiles.length === 0) {
         resolve(null);
       }
-
       const uploadedFiles = pdfFiles.map((file) => ({
         url: URL.createObjectURL(file),
         filename: file.name,
         metadata: { name: file.name },
       }));
-
       const formData = new FormData();
       for (const file of pdfFiles) {
         formData.append("file", file);
@@ -35,7 +33,6 @@ export default async function FilePicker(files,index,link,paṭh) {
       );
 
       if (apiResponse.status) {
-        console.log(apiResponse,'apiResponse')
         const pdfUrl = apiResponse?.message?.data;
         resolve(pdfUrl);
       } else {
