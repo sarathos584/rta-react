@@ -98,10 +98,10 @@ a:hover{text-decoration:underline}
 .srchcont{margin:20px 0;}
 
 .srchrsult, .payfees, .totalamount, .regularfines, .moreinfo{width:100%;}
-.srchrsult td{border-right:1px solid #dbdbdb; background:#eceff1 url(../../traffic.rta.ae/trfesrv/public_resources/images_en/titlebg.gif) repeat-x 0 100%; padding:6px 18px 6px 12px;}
+.srchrsult td{border-right:1px solid #dbdbdb; background:#eceff1 url(	https://traffic.rta.ae/trfesrv/public_resources/images_en/titlebg.gif) repeat-x 0 100%; padding:6px 18px 6px 12px;}
 .srchrsult td.nobg{border:none}
 .srchrsult th.nobg .digbg{background:none}
-.srchrsult th{background:url(../../traffic.rta.ae/trfesrv/public_resources/images_en/thbg.gif) repeat-x 0 0; font-weight:bold; color:#777;}
+.srchrsult th{background:url(https://traffic.rta.ae/trfesrv/public_resources/images_en/thbg.gif) repeat-x 0 0; font-weight:bold; color:#777;}
 .payfees td, .regularfines td, .regularfines th{background:#eceff1 url(../../traffic.rta.ae/trfesrv/public_resources/images_en/titlebg.gif) repeat-x 0 100%;}
 .payfees td, .regularfines td, .regularfines th{padding:12px; border-right:1px solid #dbdbdb}
 .payfees th{background:url(../../traffic.rta.ae/trfesrv/public_resources/images_en/thbg.gif) repeat-x 0 0; font-weight:bold; height:42px; padding:0 12px;}
@@ -124,7 +124,7 @@ a:hover{text-decoration:underline}
 .talbcorn{background:#777 url(../../traffic.rta.ae/trfesrv/public_resources/images_en/talbcorn.gif) no-repeat 0 100%;}
 .tarbcorn{background:#777 url(../../traffic.rta.ae/trfesrv/public_resources/images_en/tarbcorn.gif) no-repeat 100% 100%;}
 
-.digbg{background:url(../../traffic.rta.ae/trfesrv/public_resources/images_en/tdbg.gif) repeat-y 100% 0; height:28px; padding:16px 12px 2px 12px; margin:-6px 0 0; *position:relative}
+.digbg{background:url(https://traffic.rta.ae/trfesrv/public_resources/images_en/tdbg.gif) repeat-y 100% 0; height:28px; padding:16px 12px 2px 12px; margin:-6px 0 0; *position:relative}
 .digbgx{background:url(../../traffic.rta.ae/trfesrv/public_resources/images_en/titlebg.gif) repeat-x 0 100%; padding:7px 0 4px; margin:0 0 10px;}
 table .digbg{*margin-right:-1px;}
 .algnmid{text-align:center;}
@@ -266,10 +266,10 @@ a.viewmorelookup{color:#528fba;}
 .subtabs li.active, .subtabs li.active p{background:url(../../traffic.rta.ae/trfesrv/public_resources/images_en/subnavbg-on.gif) no-repeat 100% 0}
 .subtabs li.active p{background-position: 0 0}
 /*btns*/
-.container a.reg-btn, .container a.reg-btn-gray, .container a.reg-btn-graid, .container a.btn-difer, .popup a.reg-btn-gray, .framebody a.reg-btn-gray{background:url(../../traffic.rta.ae/trfesrv/public_resources/images_en/reg_btn.gif) no-repeat 0 0; padding:0 0 0 18px; /*color:#d33127;*/ color:#777; display:inline-block; cursor:pointer; margin:0 0 0 5px}
-.reg-btn em, .reg-btn-gray em, .btn-difer em, .reg-btn-graid em{font-style:normal; font:normal 12px Helvetica; height:18px; padding:4px 18px 0 0; background:url(../../traffic.rta.ae/trfesrv/public_resources/images_en/reg_btn.gif) no-repeat 100% 0; display:block; _float:left; text-align:center}
-.container a.reg-btn-gray, .popup a.reg-btn-gray, .framebody a.reg-btn-gray{background:url(../../traffic.rta.ae/trfesrv/public_resources/images_en/reg_btn_gray.gif) no-repeat 0 0;}
-.reg-btn-gray em{background:url(../../traffic.rta.ae/trfesrv/public_resources/images_en/reg_btn_gray.gif) no-repeat 100% 0;}
+.container a.reg-btn, .container a.reg-btn-gray, .container a.reg-btn-graid, .container a.btn-difer, .popup a.reg-btn-gray, .framebody a.reg-btn-gray{background:url(	https://traffic.rta.ae/trfesrv/public_resources/images_en/reg_btn.gif) no-repeat 0 0; padding:0 0 0 18px; /*color:#d33127;*/ color:#777; display:inline-block; cursor:pointer; margin:0 0 0 5px}
+.reg-btn em, .reg-btn-gray em, .btn-difer em, .reg-btn-graid em{font-style:normal; font:normal 12px Helvetica; height:18px; padding:4px 18px 0 0; background:url(https://traffic.rta.ae/trfesrv/public_resources/images_en/reg_btn.gif) no-repeat 100% 0; display:block; _float:left; text-align:center}
+.container a.reg-btn-gray, .popup a.reg-btn-gray, .framebody a.reg-btn-gray{background:url(https://traffic.rta.ae/trfesrv/public_resources/images_en/reg_btn_gray.gif) no-repeat 0 0;}
+.reg-btn-gray em{background:url(https://traffic.rta.ae/trfesrv/public_resources/images_en/reg_btn_gray.gif) no-repeat 100% 0;}
 .container a.btn-difer, .btn-difer em{background:url(../../traffic.rta.ae/trfesrv/public_resources/images_en/btn_difer.gif) no-repeat 0 0; padding:0 0 0 24px; color:#696868; font-weight:bold; margin:-4px 0 0 5px;}
 .btn-difer em{background-position:100% 0; height:21px; padding: 7px 32px 0 0; margin:0}
 .container a.btn-difer{*position:relative;}

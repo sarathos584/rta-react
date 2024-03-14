@@ -1,4 +1,6 @@
 import React from 'react'
+import logo from '../../public/assets_new/government-dubai.png'
+import Rta from '../../public/assets_new/RTA.png'
 
 function Header() {
   return (
@@ -10,10 +12,10 @@ function Header() {
       <div className="container">
         <div className="logosSection">
           <a href="https://www.digitaldubai.ae/ar" title="Government of Dubai" className="governmentDubai _updated">
-            <img src="/public/assets_new/government-dubai.png" />
+            <img src={logo} />
           </a>
           <a href="https://www.rta.ae/wps/portal/rta/ae/home" title="RTA Dubai" className="RTADubai _updated">
-            <img src="/public/assets_new/RTA.png" />
+            <img src={Rta} />
           </a>
         </div>
         <nav className="navbar navbar-default menuParent">

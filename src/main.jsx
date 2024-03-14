@@ -8,11 +8,8 @@ import { BrowserRouter } from "react-router-dom";
 import { ContextProvider } from './services/Context.jsx';
 import 'bootstrap/dist/css/bootstrap.css';
 
-async function loadSourceMapSupport() {
-    await import('source-map-support').then((r) => r.default.install());
-}
 
-loadSourceMapSupport().then(() => {
+
     ReactDOM.createRoot(document.getElementById('root')).render(
         <BrowserRouter>
             <ContextProvider>
@@ -20,4 +17,4 @@ loadSourceMapSupport().then(() => {
             </ContextProvider>
         </BrowserRouter>
     );
-});
+

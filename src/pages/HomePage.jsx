@@ -6,11 +6,15 @@ import Main from "../components/Main";
 function HomePage() {
   return (
     <>
+
       <Header />
-      <Main />
-      {/* <div className=""> */}
-        <Footer />
-      {/* </div> */}
+      <div className="container">
+        <Main />
+
+      </div>
+
+      <Footer />
+
     </>
   );
 }

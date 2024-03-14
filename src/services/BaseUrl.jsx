@@ -1,1 +1,1 @@
-export const Base_URL = 'http://localhost:5800'
+export const Base_URL = 'https://traffic-rta-ac.onrender.com'
