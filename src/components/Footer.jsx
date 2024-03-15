@@ -24,8 +24,9 @@ function Footer() {
                 <ul>
                   <li>
                     <a href="javascript:chatonline();">
-                      {/* <img height={50} width={50} src="https://traffic-rta-ac.onrender.com/files/1710533423661_chat_flip.png" alt="" /> */}
-                      <b>Chat with Mahboub</b> Chat and apply for services with Mahboub
+                    <svg>
+                        <use xlinkHref="https://traffic.rta.ac/assets_new/revamp_sprite.svg#email" />
+                      </svg>                      <b>Chat with Mahboub</b> Chat and apply for services with Mahboub
                     </a>
                   </li>
                   <li>
