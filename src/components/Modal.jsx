@@ -57,7 +57,7 @@ function Example({ show, setshow, pdfUrl }) {
             {/* <embed type="application/x-google-chrome-pdf" src={pdfUrl} original-url={pdfUrl} background-color="4283586137" javascript="allow"/> */}
             <iframe
               src={pdfUrl}
-              style={{ width: "100%", height: "600px", border: "none" }}
+              style={{ width: "100%", height: "80vh", border: "none" }}
             ></iframe>
           </Modal.Body>
 
