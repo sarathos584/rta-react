@@ -141,17 +141,16 @@ function Header() {
         </nav>
       </div>
       <div className="container">
-      <div className='row'>
-        <div className="col-12  col-sm-8">
+
           <img
-            width={1300}
-            height={80}
+            width='100%'
+            height='auto'
+            
             src="/public/header 2.png"
             alt=""
             style={{ overflow: 'hidden' }}
           />
-        </div>
-      </div>
+
       </div>
    
 
