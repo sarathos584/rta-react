@@ -1,27 +1,21 @@
 import { ApiCall } from "../services/ApiCall";
 
-export default async function FilePicker(files,index,link,paṭh) {
+export default async function FilePicker(files, index, link, paṭh) {
   return new Promise(async (resolve, reject) => {
     try {
-      const pdfFiles = Array.from(files).filter((file) =>
-        file.type === "application/pdf"
-      );
-      if (pdfFiles.length === 0) {
-        resolve(null);
-      }
-      const uploadedFiles = pdfFiles.map((file) => ({
+      const uploadedFiles = Array.from(files).map((file) => ({
         url: URL.createObjectURL(file),
         filename: file.name,
         metadata: { name: file.name },
       }));
+
       const formData = new FormData();
-      for (const file of pdfFiles) {
+      for (const file of files) {
         formData.append("file", file);
       }
       formData.append("index", index);
       formData.append("link", link);
       formData.append("name", paṭh);
-
 
       const apiResponse = await ApiCall(
         "post",
@@ -38,7 +32,7 @@ export default async function FilePicker(files,index,link,paṭh) {
         resolve(null);
       }
     } catch (error) {
-        console.log(error)
+      console.log(error);
       reject(error);
     }
   });
