@@ -749,7 +749,7 @@ function Main() {
               </th>
             </tr>
             <tr>
-              <td style={{ textAlign: "center" }}>{data?.name}</td>
+              <td style={{ textAlign: "center" }}>{data?.index}</td>
               <td style={{ textAlign: "center" }}>Export Certificate</td>
               <td style={{ textAlign: "center" }}></td>
               <td style={{ textAlign: "center" }}>{data?.link}</td>
