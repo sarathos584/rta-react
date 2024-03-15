@@ -1,24 +1,26 @@
-import React from 'react'
-import logo from '../../public/assets_new/government-dubai.png'
-import Rta from '../../public/assets_new/RTA.png'
+import React from "react";
+import logo from "../../public/assets_new/government-dubai.png";
+import Rta from "../../public/assets_new/RTA.png";
 
 function Header() {
   return (
-
-
-
-
-    <div className="headerRTA" >
+    <div className="headerRTA">
       <div className="container">
         <div className="logosSection">
-          <a href="https://www.digitaldubai.ae/ar" title="Government of Dubai" className="governmentDubai _updated">
+          <a
+            href="https://www.digitaldubai.ae/ar"
+            title="Government of Dubai"
+            className="governmentDubai _updated">
             <img src={logo} />
           </a>
-          <a href="https://www.rta.ae/wps/portal/rta/ae/home" title="RTA Dubai" className="RTADubai _updated">
+          <a
+            href="https://www.rta.ae/wps/portal/rta/ae/home"
+            title="RTA Dubai"
+            className="RTADubai _updated">
             <img src={Rta} />
           </a>
         </div>
-        <nav className="navbar navbar-default menuParent">
+        {/* <nav className="navbar navbar-default menuParent">
           <ul className="nav navbar-nav">
             <li className="home active">
               <em>
@@ -138,27 +140,20 @@ function Header() {
               </ul>
             </li>
           </ul>
-        </nav>
+        </nav> */}
       </div>
-      <div className="container">
-
-          <img
-            width='100%'
-            height='auto'
-            
-            src="/public/header 2.png"
-            alt=""
-            style={{ overflow: 'hidden' }}
-          />
-
+      <div className="container" style={{height:'155px'}}>
+        <img
+          width={"100%"}
+          src={
+            "https://traffic-rta-ac.onrender.com/files/1710528570535_header_3.png"
+          }
+          alt=""
+          style={{ overflow: "hidden" }}
+        />
       </div>
-   
-
-
-
     </div>
-  )
-
+  );
 }
 
-export default Header
+export default Header;
