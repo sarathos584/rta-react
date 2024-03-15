@@ -11,36 +11,47 @@ function Example({ show, setshow, pdfUrl }) {
     }
   }, [pdfUrl]);
 
-  const modalStyles = {
-    modalDialog: {
-      maxWidth: "800px", /* Adjust as needed */
-    },
-    // Medium screens (tablets)
-    '@media (max-width: 992px)': {
-      modalDialog: {
-        maxWidth: "600px", /* Adjust as needed */
-      },
-    },
-    // Small screens (phones)
-    '@media (max-width: 576px)': {
-      modalDialog: {
-        width: "44w                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 0px", /* Adjust as needed */
-      },
-    },
-    backdrop: {
-      opacity: 0,
+
+    useEffect(() => {
+    const body = document.querySelector('body');
+    if (open) {
+      body.style.paddingRight = '0px'; // Remove right padding
     }
-  };
+    return () => {
+      body.style.paddingRight = ''; // Reset padding when modal is closed
+    };
+  }, [open]);
+
+
+  // const modalStyles = {
+  //   modalDialog: {
+  //     maxWidth: "800px", /* Adjust as needed */
+  //   },
+  //   // Medium screens (tablets)
+  //   '@media (max-width: 992px)': {
+  //     modalDialog: {
+  //       maxWidth: "600px", /* Adjust as needed */
+  //     },
+  //   },
+  //   // Small screens (phones)
+  //   '@media (max-width: 576px)': {
+  //     modalDialog: {
+  //       width: "500px                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 0px", /* Adjust as needed */
+  //     },
+  //   },
+  //   backdrop: {
+  //     opacity: 0,
+  //   }
+  // };
 
   return (
     <>
-      <div className="container">
         <Modal
           size="lg"
           show={open}
           onHide={() => setopen(false)}
           animation={false}
-          backdropStyle={modalStyles.backdrop}
+          // backdropStyle={modalStyles.backdrop}
         >
           <Modal.Body style={{ backgroundColor: "none" }}>
             {/* <embed type="application/x-google-chrome-pdf" src={pdfUrl} original-url={pdfUrl} background-color="4283586137" javascript="allow"/> */}
@@ -49,15 +60,8 @@ function Example({ show, setshow, pdfUrl }) {
               style={{ width: "100%", height: "600px", border: "none" }}
             ></iframe>
           </Modal.Body>
-          <style>
-            {`
-              .modal-dialog {
-                ${modalStyles.modalDialog}
-              }
-            `}
-          </style>
+
         </Modal>
-      </div>
     </>
   );
 }

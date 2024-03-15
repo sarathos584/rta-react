@@ -424,7 +424,7 @@ function doNext(elment){
         }
         if( tempDate.length != 8 & tempDate.length != 10 ) {
             if(lang=='ar'){
-                alert(' dd-mm-yyyy :'+ title + ' ÛíÑ ÕÇáÍ ãËÇá');
+                alert(' dd-mm-yyyy :'+ title + ' ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½');
             }else{
                 alert(title + ' is not valid : dd-mm-yyyy');
             }
@@ -435,7 +435,7 @@ function doNext(elment){
         if(tempDate.length == 8){
             if (isNaN(tempDate)) {
                 if(lang=='ar'){
-                    alert(' dd-mm-yyyy :'+ title + ' ÛíÑ ÕÇáÍ ãËÇá');
+                    alert(' dd-mm-yyyy :'+ title + ' ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½');
                 }else{
                     alert(title + ' is not valid : dd-mm-yyyy');
                 }
@@ -454,7 +454,7 @@ function doNext(elment){
         if(tempDate.length == 10){
             if ( !isNaN(tempDate)){
                 if(lang=='ar'){
-                    alert(' dd-mm-yyyy :'+ title + ' ÛíÑ ÕÇáÍ ãËÇá');
+                    alert(' dd-mm-yyyy :'+ title + ' ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½');
                 }else{
                     alert(title + ' is not valid : dd-mm-yyyy');
                 }
@@ -465,7 +465,7 @@ function doNext(elment){
             }
             if(tempDate.substring(2,3) != tempDate.substring(5,6) ){
                 if(lang=='ar'){
-                    alert(' dd-mm-yyyy :'+ title + ' ÛíÑ ÕÇáÍ ãËÇá');
+                    alert(' dd-mm-yyyy :'+ title + ' ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½');
                 }else{
                     alert(title + ' is not valid : dd-mm-yyyy');
                 }
@@ -511,7 +511,7 @@ function doNext(elment){
         if(s1 == -1 || s2 == -1 || s1 == s2)
         {
             if(lang=='ar'){
-                alert(' dd-mm-yyyy :'+ title + ' ÛíÑ ÕÇáÍ ãËÇá');
+                alert(' dd-mm-yyyy :'+ title + ' ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½');
             }else{
                 alert(title + ' is not valid : dd-mm-yyyy');
             }
@@ -523,7 +523,7 @@ function doNext(elment){
         if(!(vf && (ds.valueOf() <= 31 && ds.valueOf() > 0)))
         {
             if(lang=='ar'){
-                alert(' dd-mm-yyyy :'+ title + ' ÛíÑ ÕÇáÍ ãËÇá');
+                alert(' dd-mm-yyyy :'+ title + ' ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½');
             }else{
                 alert(title + ' is not valid : dd-mm-yyyy');
             }
@@ -535,7 +535,7 @@ function doNext(elment){
         if(!(vd && (ms.valueOf() <= 12 && ms.valueOf() > 0)))
         {
             if(lang=='ar'){
-                alert(' dd-mm-yyyy :'+ title + ' ÛíÑ ÕÇáÍ ãËÇá');
+                alert(' dd-mm-yyyy :'+ title + ' ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½');
             }else{
                 alert(title + ' is not valid : dd-mm-yyyy');
             }   
@@ -547,7 +547,7 @@ function doNext(elment){
         if(!(vm && ys.length == 4))
         {
             if(lang=='ar'){
-                alert(' dd-mm-yyyy :'+ title + ' ÛíÑ ÕÇáÍ ãËÇá');
+                alert(' dd-mm-yyyy :'+ title + ' ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½');
             }else{
                 alert(title + ' is not valid : dd-mm-yyyy');
             } 
@@ -560,7 +560,7 @@ function doNext(elment){
         if ((ms.valueOf() == 1 || ms.valueOf() == 3 || ms.valueOf() == 5 || ms.valueOf() == 7 || ms.valueOf() == 8 || ms.valueOf() == 10 || ms.valueOf() == 12)
                 && (ds.valueOf() > 31 || ds.valueOf() < 1)) {
             if(lang=='ar'){
-                alert(' dd-mm-yyyy :'+ title + ' ÛíÑ ÕÇáÍ ãËÇá');
+                alert(' dd-mm-yyyy :'+ title + ' ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½');
             }else{
                 alert(title + ' is not valid : dd-mm-yyyy');
             }   
@@ -573,7 +573,7 @@ function doNext(elment){
         if ((ms.valueOf() == 4 || ms.valueOf() == 6 || ms.valueOf() == 9 || ms.valueOf() == 11)
                 && (ds.valueOf() > 30 || ds.valueOf() < 1)) {
             if(lang=='ar'){
-                alert(' dd-mm-yyyy :'+ title + ' ÛíÑ ÕÇáÍ ãËÇá');
+                alert(' dd-mm-yyyy :'+ title + ' ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½');
             }else{
                 alert(title + ' is not valid : dd-mm-yyyy');
             }     
@@ -586,7 +586,7 @@ function doNext(elment){
         if (ms.valueOf() == 2) {
             if (ds.valueOf() < 1) {
                 if(lang=='ar'){
-                    alert(' dd-mm-yyyy :'+ title + ' ÛíÑ ÕÇáÍ ãËÇá');
+                    alert(' dd-mm-yyyy :'+ title + ' ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½');
                 }else{
                     alert(title + ' is not valid : dd-mm-yyyy');
                 }    
@@ -599,7 +599,7 @@ function doNext(elment){
             if (LeapYear(yn.valueOf()) == true) {
                 if (ds.valueOf() > 29) {
                     if(lang=='ar'){
-                        alert(' dd-mm-yyyy :'+ title + ' ÛíÑ ÕÇáÍ ãËÇá');
+                        alert(' dd-mm-yyyy :'+ title + ' ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½');
                     }else{
                         alert(title + ' is not valid : dd-mm-yyyy');
                     }  
@@ -611,7 +611,7 @@ function doNext(elment){
             } else {
                 if (ds.valueOf() > 28) {
                     if(lang=='ar'){
-                        alert(' dd-mm-yyyy :'+ title + ' ÛíÑ ÕÇáÍ ãËÇá');
+                        alert(' dd-mm-yyyy :'+ title + ' ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½');
                     }else{
                         alert(title + ' is not valid : dd-mm-yyyy');
                     }     
@@ -785,13 +785,13 @@ function isEqualToday(dateValue) {
         var myTime = item.value;
         
         if ((!IsEmpty(item)) && (myTime.length < 4 || myTime.length > 5) ) {
-            alert('hh:mm Ãæ hhmm íÌÈ Ãä íßæä '+title+' Úáì ÇáÔßá ÇáÊÇáí ');
+            alert('hh:mm ï¿½ï¿½ hhmm ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ '+title+' ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ');
             item.select();
             return false;
         } else if (!IsEmpty(item)) {
             var sep = myTime.substring(2,3)            
             if ((myTime.length==5) && (sep != ':')) {
-                alert('hh:mm Ãæ hhmm íÌÈ Ãä íßæä '+title+' Úáì ÇáÔßá ÇáÊÇáí ');
+                alert('hh:mm ï¿½ï¿½ hhmm ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ '+title+' ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ');
                 item.select();
                 return false;                
             } else if (myTime.length==4) {
@@ -801,13 +801,13 @@ function isEqualToday(dateValue) {
 
             var hour = parseFloat(myTime.substring(0,2));
             if (isNaN(hour) || hour < 0 || hour > 24) {
-                alert('íÌÈ Ãä Êßæä ÇáÓÇÚÇÊ ãÍÕæÑÉ Èíä 01 - 24');
+                alert('ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ 01 - 24');
                 item.select();
                 return false;                                
             }
             var minute = parseFloat(myTime.substring(3,5));
             if (isNaN(minute) || minute < 0 || minute > 59) {
-                alert('íÌÈ Ãä Êßæä ÇáÏÞÇÆÞ ãÍÕæÑÉ Èíä 00 - 59');
+                alert('ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ 00 - 59');
                 item.select();
                 return false;                
             } 
@@ -829,7 +829,7 @@ function validateMobile(obj,title,lang, useBootstrap){
         if( isNaN(obj.value) ) {
             if(lang=='ar'){
 
-               showAlert(useBootstrap,"íÌÈ Ãä íÊßæä "+title+" ãä ÃÑÞÇã");
+               showAlert(useBootstrap,"ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ "+title+" ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½");
 
             }else{
                showAlert(useBootstrap,"Mobile must be number");
@@ -839,7 +839,7 @@ function validateMobile(obj,title,lang, useBootstrap){
         }
         if(obj.value.length  != 10 && obj.value.length != 12){
             if(lang=='ar'){
-                showAlert(useBootstrap,""+ title+" ÇáãÏÎá ÛíÑ ÕÍíÍ¡ íÌÈ Ãä íÈÏÃ ÇáÑÞã È 050 , 052, 054 , 055, 056 , 058, 97154, 97150,  97152, 97155 ,97156 Ãæ 97158");
+                showAlert(useBootstrap,""+ title+" ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Í¡ ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ 050 , 052, 054 , 055, 056 , 058, 97154, 97150,  97152, 97155 ,97156 ï¿½ï¿½ 97158");
             }else{
                 showAlert(useBootstrap,"Mobile number entered is not valid, number must begin with 050, 052 , 054 ,055 , 056 ,058 , 97150 , 97154 ,97156 ,97156 or 97158");
             }
@@ -851,7 +851,7 @@ function validateMobile(obj,title,lang, useBootstrap){
             numPrefix = obj.value.substring(0,5);
             if(numPrefix != "97150" && numPrefix != "97152" && numPrefix != "97154" && numPrefix != "97155" && numPrefix != "97156" && numPrefix != "97158"){
                  if(lang=='ar'){
-                    showAlert(useBootstrap,' '+ title+' ÇáãÏÎá ÛíÑ ÕÍíÍ¡ íÌÈ Ãä íÈÏÃ ÇáÑÞã È 97150 ,  97152, 97154 , 97155, 97156 Ãæ 97158');
+                    showAlert(useBootstrap,' '+ title+' ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Í¡ ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ 97150 ,  97152, 97154 , 97155, 97156 ï¿½ï¿½ 97158');
                 }else{
                     showAlert(useBootstrap,'Mobile number entered is not valid, number must begin with 97150, 97152 , 97154 ,97155 ,97156 or 97158');
                 }
@@ -863,7 +863,7 @@ function validateMobile(obj,title,lang, useBootstrap){
             mobileNo  = obj.value.substring(3,obj.length);
             if(numPrefix != "050" && numPrefix != "052" && numPrefix != "054" && numPrefix != "055" && numPrefix != "056" && numPrefix != "058" ){
                 if(lang=='ar'){
-                    showAlert(useBootstrap,''+ title+' ÇáãÏÎá ÛíÑ ÕÍíÍ¡ íÌÈ Ãä íÈÏÃ ÇáÑÞã È 050 , 052 ,054 , 055 ,056 Ãæ 058');
+                    showAlert(useBootstrap,''+ title+' ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Í¡ ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ 050 , 052 ,054 , 055 ,056 ï¿½ï¿½ 058');
                 }else{
                     showAlert(useBootstrap,'Mobile number entered is not valid, number mus begin with 050 ,052 , 054 ,055 ,056 or 058');
                 }
@@ -978,7 +978,7 @@ function isValidPhoneNumber(obj, title,lang, useBootstrap, withoutCountryCode){
     if( obj.value != "" ) {
         if( isNaN(obj.value) ) {
             if(lang=='ar'){
-                showAlert(useBootstrap,"íÌÈ Ãä íÊßæä "+title+" ãä ÃÑÞÇã");
+                showAlert(useBootstrap,"ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ "+title+" ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½");
             }else{
                 showAlert(useBootstrap,"Phone number must be number");
             }
@@ -989,7 +989,7 @@ function isValidPhoneNumber(obj, title,lang, useBootstrap, withoutCountryCode){
         if(withoutCountryCode != null && withoutCountryCode){
         if(obj.value.length  != 9 || obj.value.charAt(0) != '0'){
                 if(lang=='ar'){
-                    showAlert(useBootstrap,'ÑÞã ÇáåÇÊÝ íÌÈ Ãä íÊßæä ãä ÃÑÞÇã ÝÞØ æÃä íÈÏÃ È 0 æÃä íÊßæä ãä 9 ÃÑÞÇã');
+                    showAlert(useBootstrap,'ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ 0 ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ 9 ï¿½ï¿½ï¿½ï¿½ï¿½');
                 }else{
                    showAlert(useBootstrap,"Phone number should be numbers, starts with 0 and contains 9 digits !");
                 }
@@ -998,7 +998,7 @@ function isValidPhoneNumber(obj, title,lang, useBootstrap, withoutCountryCode){
                 return false;
             } else if(obj.value.length  == 9 && obj.value.substring(2)== '0000000'){
                 if(lang=='ar'){
-                    showAlert(useBootstrap,'ÑÞã ÇáåÇÊÝ íÌÈ Çä áÇ ÈÊßæä ãä ÃÕÝÇÑÃÑÞÇã');
+                    showAlert(useBootstrap,'ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½');
                 }else{
                    showAlert(useBootstrap,"Please Phone Number Should not be 0000000.");
                 }
@@ -1008,7 +1008,7 @@ function isValidPhoneNumber(obj, title,lang, useBootstrap, withoutCountryCode){
             }else {
                 if(obj.value.length  != 9 && obj.value.length != 11){
                     if(lang=='ar'){
-                        showAlert(useBootstrap,'ÑÞã ÇáåÇÊÝ íÌÈ Ãä íÊßæä ãä ÃÑÞÇã ÝÞØ æÃä íÈÏÃ È 0 æÃä íÊßæä ãä 9 ÃÑÞÇã');
+                        showAlert(useBootstrap,'ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ 0 ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ 9 ï¿½ï¿½ï¿½ï¿½ï¿½');
                     }else{
                        showAlert(useBootstrap,"Phone number should be numbers, starts with 0 and contains 9 digits !");
                     }
@@ -1152,8 +1152,8 @@ function noOfDaysBetween(dateFrom,dateTo) {
 //            z==122
 //            0==47
 //            9==57  
-//            Á ===1569  
-//            í==1610
+//            ï¿½ ===1569  
+//            ï¿½==1610
             if((65 > code || 90 < code) && 
                (97 > code || 122 < code) && 
                (1569 > code || 1610 < code ) && code != 32 ){
@@ -1185,7 +1185,7 @@ function containsNonEnglishCharacters(text,userLang) {
                         || (charCode >=48 && charCode<=57)
                         || (charCode >=65 && charCode<=90) || (charCode>=97 && charCode<=122) )) {
                     if(userLang.toUpperCase() == 'AR'){
-                        return '/ \ : < > * ? | ! "' + ' ÇáÑÌÇÁ ßÊÇÈÉ ÇáäÕ ÈÇááÛÉ ÇáÅäÌáíÒíÉ æ ÃáÇ íÍÊæì Úáì ÚáÇãÇÊ ÎÇÕÉ ãËá ';
+                        return '/ \ : < > * ? | ! "' + ' ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ';
                     }else{
                         return 'Please enter English Text that does not contain special charachters like / \ : < > * ? | ! " ';
                     }
@@ -1212,7 +1212,7 @@ function containsNonEnglishCharacters(text,userLang) {
                         || (charCode >=48 && charCode<=57)
                         || (charCode >=65 && charCode<=90) || (charCode>=97 && charCode<=122) )) {
                     if(userLang.toUpperCase() == 'AR'){
-                        return '/ \ : < > * ? | ! "' + ' ÇáÑÌÇÁ ßÊÇÈÉ ' + label + ' ÈÇááÛÉ ÇáÅäÌáíÒíÉ æ ÃáÇ íÍÊæì Úáì ÚáÇãÇÊ ÎÇÕÉ ãËá ';
+                        return '/ \ : < > * ? | ! "' + ' ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ' + label + ' ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ';
                     }else{
                         return 'Please enter ' + label + ' in English that does not contain special charachters like / \ : < > * ? | ! " ';
                     }
@@ -1737,7 +1737,7 @@ function checkPhoneNumber(obj, title,lang,  withoutCountryCode){
     }
     if( isNaN(obj.value) ) {
         if(lang=='ar'){
-            return "íÌÈ Ãä íÊßæä "+title+" ãä ÃÑÞÇã";
+            return "ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ "+title+" ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½";
         }else{
             return "Phone number must be number";
         }
@@ -1745,13 +1745,13 @@ function checkPhoneNumber(obj, title,lang,  withoutCountryCode){
     if(withoutCountryCode != null && withoutCountryCode){
         if(obj.value.length  != 9 || obj.value.charAt(0) != '0'){
             if(lang=='ar'){
-                return 'ÑÞã ÇáåÇÊÝ íÌÈ Ãä íÊßæä ãä ÃÑÞÇã ÝÞØ æÃä íÈÏÃ È 0 æÃä íÊßæä ãä 9 ÃÑÞÇã';
+                return 'ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ 0 ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ 9 ï¿½ï¿½ï¿½ï¿½ï¿½';
             }else{
                 return "Phone number should be numbers, starts with 0 and contains 9 digits !";
             }
         } else if(obj.value.length  == 9 && obj.value.substring(2)== '0000000'){
             if(lang=='ar'){
-                return 'ÑÞã ÇáåÇÊÝ íÌÈ Çä áÇ ÈÊßæä ãä ÃÕÝÇÑÃÑÞÇã';
+                return 'ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½';
             }else{
                 return "Please Phone Number Should not be 0000000.";
             }
@@ -1759,7 +1759,7 @@ function checkPhoneNumber(obj, title,lang,  withoutCountryCode){
     }else {
         if(obj.value.length  != 9 && obj.value.length != 11){
             if(lang=='ar'){
-                return 'ÑÞã ÇáåÇÊÝ íÌÈ Ãä íÊßæä ãä ÃÑÞÇã ÝÞØ æÃä íÈÏÃ È 0 æÃä íÊßæä ãä 9 ÃÑÞÇã';
+                return 'ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ 0 ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ 9 ï¿½ï¿½ï¿½ï¿½ï¿½';
             }else{
                 return "Phone number should be numbers, starts with 0 and contains 9 digits !";
             }
