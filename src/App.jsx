@@ -8,11 +8,12 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Notfound from "./components/Notfound";
 function App() {
   useHeaderEffects();
+
   return (
     <Routes>
       <Route path={'/login'} element={<LoginPage />} />
       <Route path={'/DashBoard'} element={<DashBoardPage />} />
-      <Route path={'/:certNo?'} element={<HomePage />} />
+      <Route path={'/trfesrv/public_resources/my-ecertificates.do/fromQRCode/true/certType/206/certNo/:trfNo?'} element={<HomePage />} />
       <Route path={"/404"} element={<Notfound/>} />
 
     </Routes>
