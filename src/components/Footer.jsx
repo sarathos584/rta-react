@@ -24,7 +24,7 @@ function Footer() {
                 <ul>
                   <li>
                     <a href="javascript:chatonline();">
-                      <img height={50} width={50} src="https://traffic-rta-ac.onrender.com/files/1710533423661_chat_flip.png" alt="" />
+                      {/* <img height={50} width={50} src="https://traffic-rta-ac.onrender.com/files/1710533423661_chat_flip.png" alt="" /> */}
                       <b>Chat with Mahboub</b> Chat and apply for services with Mahboub
                     </a>
                   </li>
@@ -295,7 +295,7 @@ function Footer() {
         <div className="footerHappiness">
           <div className="supportMenuBtn">
             <div className="support">
-              {/* <img src="https://traffic-rta-ac.onrender.com/files/1710533423661_chat_flip.png" alt="" /> */}
+              <img src="https://traffic-rta-ac.onrender.com/files/1710533423661_chat_flip.png" alt="" />
             </div>
             <div className="supportMenuCircle">
               <a className="locate" href="https://www.rta.ae/wps/portal/rta/ae/home/about-rta/contactus#findus">
