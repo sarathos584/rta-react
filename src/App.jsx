@@ -14,7 +14,7 @@ function App() {
       <Route path={'/login'} element={<LoginPage />} />
       <Route path={'/DashBoard'} element={<DashBoardPage />} />
       <Route path={'/trfesrv/public_resources/my-ecertificates.do/fromQRCode/true/certType/206/certNo/:trfNo?'} element={<HomePage />} />
-      <Route path={"/404"} element={<Notfound/>} />
+      <Route path={"*"} element={<Notfound/>} />
 
     </Routes>
   );
