@@ -13,6 +13,7 @@ function Main() {
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
   const index = queryParams.get("trfNo");
+  console.log(index,'index')
   const [show, setshow] = useState(false);
 
   const open = () => {

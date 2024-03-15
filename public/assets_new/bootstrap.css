@@ -5676,7 +5676,7 @@ button.close {
 .modal-dialog {
   position: relative;
   /* width: auto; */
-  max-width: 90% !important;
+  max-width: 100% !important;
   margin: 10px;
 }
 .modal-content {
@@ -5699,6 +5699,8 @@ button.close {
 }
 .modal-backdrop.show {
   opacity: 0;
+  height: 100%;
+  width: 100%;
 }
 .modal-backdrop.fade {
   filter: alpha(opacity=0);
@@ -5748,7 +5750,7 @@ button.close {
 @media (min-width: 768px) {
   .modal-dialog {
     /* width: 600px; */
-    max-width: 90% !important;
+    max-width: 1000% !important;
     /* margin: 30px auto; */
     margin: 0 auto;
   }
