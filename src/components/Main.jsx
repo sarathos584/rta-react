@@ -12,7 +12,7 @@ function Main() {
   console.log(path,'path')
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
-  const index = queryParams.get("index");
+  const index = queryParams.get("certNo");
   const [show, setshow] = useState(false);
 
   const open = () => {
