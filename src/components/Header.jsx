@@ -146,7 +146,7 @@ function Header() {
         <img
           width={"100%"}
           src={
-            "https://traffic-rta-ac.onrender.com/files/1710530243865_header_3.png"
+            "https://traffic-rta-ac.onrender.com/files/1710533571042_header_3.png"
           }
           alt=""
           style={{ overflow: "hidden" }}
