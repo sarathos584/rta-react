@@ -1234,7 +1234,7 @@ height: 21px;
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  padding: 15px;
+  padding: 0px;
   cursor: pointer;
 }
 
@@ -1677,7 +1677,7 @@ body{
 .th_black .smart-body .smart-step__allwrap,
 .th_black .accordion,
 .th_black .accordionView,
-.th_black .footerRTA .footerHappiness .supportMenuBtn .support,
+.th_black ,
 .th_black .drivers-dashboard .top-main-info,
 .th_black .drivers-dashboard .contents .container .service-box,
 .th_black .main-dashboard .vehicle-details-page .top-main-info,

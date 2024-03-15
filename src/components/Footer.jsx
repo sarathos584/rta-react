@@ -297,9 +297,7 @@ function Footer() {
         <div className="footerHappiness">
           <div className="supportMenuBtn">
             <div className="support">
-              <svg>
-                <use xlinkHref="https://traffic.rta.ac/assets_new/revamp_sprite.svg#support" />
-              </svg>
+              <img src="/public/chat-flip.svg" alt="" />
             </div>
             <div className="supportMenuCircle">
               <a className="locate" href="https://www.rta.ae/wps/portal/rta/ae/home/about-rta/contactus#findus">
