@@ -14,7 +14,7 @@ function Example({ show, setshow, pdfUrl }) {
  const [open, setopen] = useState(false);
 
  const theme = useTheme();
- const fullScreen = useMediaQuery(theme.breakpoints.down('lg'));
+ const fullScreen = true
 
  useEffect(() => {
     if (pdfUrl) {
@@ -44,7 +44,7 @@ function Example({ show, setshow, pdfUrl }) {
           style: {
             backgroundColor: '#000',
             boxShadow: 'none',
-            opacity: '0.9'
+            opacity: '0.7'
            
           },
         }}
