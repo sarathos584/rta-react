@@ -5691,6 +5691,7 @@ button.close {
   height: 100%;
   border-radius: 6px;
   outline: 0;
+  background: none !important;
 
 }
 .modal-backdrop {
