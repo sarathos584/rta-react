@@ -1,20 +1,30 @@
 import { useEffect, useState } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
+import Dialog from '@mui/material/Dialog';
+import DialogContent from '@mui/material/DialogContent';
+import DialogTitle from '@mui/material/DialogTitle';
+import { Box } from '@mui/material';
+import { Backdrop } from '@mui/material';
+import { CircularProgress } from '@mui/material';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import { useTheme } from '@mui/material/styles';
 
 function Example({ show, setshow, pdfUrl }) {
-  const [open, setopen] = useState(false);
+ const [open, setopen] = useState(false);
 
-  useEffect(() => {
+ const theme = useTheme();
+ const fullScreen = useMediaQuery(theme.breakpoints.down('lg'));
+
+ useEffect(() => {
     if (pdfUrl) {
       setTimeout(()=> {
         setopen(true);
       }, 5000)
     }
-  }, [pdfUrl]);
+ }, [pdfUrl]);
 
-
-    useEffect(() => {
+ useEffect(() => {
     const body = document.querySelector('body');
     if (open) {
       body.style.paddingRight = '0px'; // Remove right padding
@@ -22,52 +32,40 @@ function Example({ show, setshow, pdfUrl }) {
     return () => {
       body.style.paddingRight = ''; // Reset padding when modal is closed
     };
-  }, [open]);
+ }, [open]);
 
-
-  // const modalStyles = {
-  //   modalDialog: {
-  //     maxWidth: "800px", /* Adjust as needed */
-  //   },
-  //   // Medium screens (tablets)
-  //   '@media (max-width: 992px)': {
-  //     modalDialog: {
-  //       maxWidth: "600px", /* Adjust as needed */
-  //     },
-  //   },
-  //   // Small screens (phones)
-  //   '@media (max-width: 576px)': {
-  //     modalDialog: {
-  //       width: "500px                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 0px", /* Adjust as needed */
-  //     },
-  //   },
-  //   backdrop: {
-  //     opacity: 0,
-  //   }
-  // };
-
-  return (
+ return (
     <>
-        <Modal
-          size="lg"
-          show={open}
-          onHide={() => setopen(false)}
-          animation={false}
-          // backdropStyle={modalStyles.backdrop}
-        >
-          <Modal.Body style={{ backgroundColor: "#eceff1", padding: '6px',maxWidth:'90%' }}>
-            {/* <embed type="application/x-google-chrome-pdf" src={pdfUrl} original-url={pdfUrl} background-color="4283586137" javascript="allow"/> */}
-          <div style={{background: '#eceff1', padding: '8px', borderRadius: '5px', height: '100%'}}>
-          <iframe
+      <Dialog
+        open={open}
+
+        fullScreen={fullScreen}
+        PaperProps={{
+          style: {
+            backgroundColor: '#000',
+            boxShadow: 'none',
+            opacity: '0.9'
+           
+          },
+        }}
+        BackdropProps={{
+          style: {
+            backdropFilter: 'blur(3px)',
+          },
+        }}
+      >
+        <DialogTitle>My Dialog</DialogTitle>
+        <DialogContent>
+          <Box sx={{ width: '100%', height: '100%', position: 'relative' }}>
+            <iframe
               src={pdfUrl}
               style={{ width: "100%", height: "100%", border: "none" }}
             ></iframe>
-          </div>
-          </Modal.Body>
-
-        </Modal>
+          </Box>
+        </DialogContent>
+      </Dialog>
     </>
-  );
+ );
 }
 
 export default Example;
