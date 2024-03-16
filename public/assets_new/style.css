@@ -5889,7 +5889,7 @@ button.sddi-style .close {
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   background-clip: padding-box;
   outline: 0;
-  height: 90%;
+  height: 100%;
 }
 .sddi-style .modal-backdrop {
   position: fixed;
@@ -5955,7 +5955,7 @@ button.sddi-style .close {
   .sddi-style .modal-content {
     -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    height: 90%;
+    height: 100%;
   }
   .sddi-style .modal-sm {
     width: 300px;
