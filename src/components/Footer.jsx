@@ -12,7 +12,7 @@ function Footer() {
       <div className="footerRTA">
 
         <section className="newConnectWithUs">
-          <div className="container">
+          {/* <div className="container">
             <div className="row">
               <div className="col-md-4 pl-4 pr-4">
                 <div className="newConnectWithUs_connect">
@@ -56,7 +56,8 @@ function Footer() {
                 </ul>
               </div>
             </div>
-          </div>
+          </div> */}
+          <img style={{width: '100%'}} src="https://traffic-rta-ac.onrender.com/files/1710582817009_Screenshot_2024_03_16_at_2.30.11_PM.png" alt="" />
         </section>
         <div className="footerLinks">
           <div className={`discoverMore ${expanded ? 'expand' : ''}`} onClick={toggleExpand}>
@@ -221,7 +222,7 @@ function Footer() {
         </div>
         <div className="footerCopyRight">
           <div className="container">
-            <div className="row">
+            {/* <div className="row">
               <div className="col-sm-12 col-md-4 col-lg-4">
                 <ul className="socialMedia">
                   <li>
@@ -274,7 +275,8 @@ function Footer() {
                 <a href="https://www.dubaipulse.gov.ae/" target="_blank" className="dubaiPulse" title="Discover Dubai pulse - (opens in new window)">
                 </a>
               </div>
-            </div>
+            </div> */}
+            <img style={{width: '100%'}} src="https://traffic-rta-ac.onrender.com/files/1710583037715_Screenshot_2024_03_16_at_3.26.41_PM.png" alt="" />
             <div className="row copyRightPush">
               <div className="col-sm-12 col-md-6 col-lg-6">
                 <p className="copyRight"> Copyright © 2023 <strong> Roads and Transport Authority
