@@ -5948,7 +5948,7 @@ button.sddi-style .close {
 }
 @media (min-width: 768px) {
   .sddi-style .modal-dialog {
-    height: 70vh;
+    height: 100%;
     max-width: 100% !important;
     margin: 30px auto;
   }

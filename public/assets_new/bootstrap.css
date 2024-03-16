@@ -5758,7 +5758,7 @@ button.close {
 }
 @media (min-width: 768px) {
   .modal-dialog {
-    height: 70vh;
+    height: 100%;
     width: 100%;
     max-width: 1000% !important;
     /* margin: 30px auto; */
