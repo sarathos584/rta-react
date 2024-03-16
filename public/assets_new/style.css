@@ -5862,14 +5862,13 @@ button.sddi-style .close {
   -o-transform: translate(0, 0);
   transform: translate(0, 0);
 }
-@media screen and (max-width: 570px) {
+/* @media screen and (max-width: 570px) {
   .sddi-style .modal-open .modal {
     width: 120vw !important;
   }
-}
+} */
 
 .sddi-style .modal-open .modal {
-  width: 96vw;
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -5922,7 +5921,7 @@ button.sddi-style .close {
 }
 .sddi-style .modal-body {
   position: relative;
-  padding: 10px !important;
+  padding: 6px !important;
   height: 90%;
 }
 .sddi-style .modal-footer {
@@ -5949,7 +5948,7 @@ button.sddi-style .close {
 }
 @media (min-width: 768px) {
   .sddi-style .modal-dialog {
-    height: 90vh;
+    height: 70vh;
     max-width: 100% !important;
     margin: 30px auto;
   }

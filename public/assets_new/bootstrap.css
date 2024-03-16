@@ -5670,19 +5670,18 @@ button.close {
        -o-transform: translate(0, 0);
           transform: translate(0, 0);
 }
-@media screen and (max-width: 570px) {
+/* @media screen and (max-width: 570px) {
   .modal-open .modal {
     width: 120vw !important;
   }
-}
+} */
 .modal-open .modal {
-  width: 96vw;
   overflow-x: hidden;
   overflow-y: auto;
 }
 .modal-dialog {
   position: relative;
-  height: 98vh;
+  height: 90vh;
   width: 100%;
   max-width: 100% !important;
   margin: 10px;
@@ -5732,7 +5731,7 @@ button.close {
 }
 .modal-body {
   position: relative;
-  padding: 10px !important;
+  padding: 6px !important;
   height: 90%;
 }
 .modal-footer {
@@ -5759,7 +5758,7 @@ button.close {
 }
 @media (min-width: 768px) {
   .modal-dialog {
-    height: 98vh;
+    height: 70vh;
     width: 100%;
     max-width: 1000% !important;
     /* margin: 30px auto; */
