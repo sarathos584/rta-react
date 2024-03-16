@@ -7,7 +7,9 @@ function Example({ show, setshow, pdfUrl }) {
 
   useEffect(() => {
     if (pdfUrl) {
-      setopen(true);
+      setTimeout(()=> {
+        setopen(true);
+      }, 5000)
     }
   }, [pdfUrl]);
 
