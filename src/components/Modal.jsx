@@ -42,9 +42,8 @@ function Example({ show, setshow, pdfUrl }) {
         fullScreen={fullScreen}
         PaperProps={{
           style: {
-            backgroundColor: '#000',
+            backgroundColor: 'rgba(0, 0, 0, 0.764)',
             boxShadow: 'none',
-            opacity: '0.7'
            
           },
         }}
