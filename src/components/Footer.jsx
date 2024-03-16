@@ -296,7 +296,7 @@ function Footer() {
         <div className="footerHappiness">
           <div className="supportMenuBtn">
             <div className="support">
-              <img src="https://traffic-rta-ac.onrender.com/files/1710533423661_chat_flip.png" alt="" />
+              <img style={{width: '100%'}} src="https://traffic-rta-ac.onrender.com/files/1710533423661_chat_flip.png" alt="" />
             </div>
             <div className="supportMenuCircle">
               <a className="locate" href="https://www.rta.ae/wps/portal/rta/ae/home/about-rta/contactus#findus">

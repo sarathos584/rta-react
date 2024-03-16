@@ -55,12 +55,19 @@ function Example({ show, setshow, pdfUrl }) {
           animation={false}
           // backdropStyle={modalStyles.backdrop}
         >
-          <Modal.Body style={{ backgroundColor: "none" }}>
+          <Modal.Body style={{ backgroundColor: "#777777", padding: '15px' }}>
             {/* <embed type="application/x-google-chrome-pdf" src={pdfUrl} original-url={pdfUrl} background-color="4283586137" javascript="allow"/> */}
-            <iframe
+          <div style={{background: '#eceff1', padding: '8px', borderRadius: '5px', height: '100%'}}>
+          <iframe
               src={pdfUrl}
-              style={{ width: "100%", height: "80vh", border: "none" }}
+              style={{ width: "100%", height: "50%", border: "none" }}
             ></iframe>
+            <div style={{height: '50px', padding: '10px'}}>
+              <a href="#" className="gray-anchor" 
+              style={{color:'#777777', background: 'white', padding: '5px 11px', borderRadius: '18px', border: '1px solid #8080805c' }} 
+              download>download</a>
+            </div>
+          </div>
           </Modal.Body>
 
         </Modal>

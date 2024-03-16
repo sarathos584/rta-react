@@ -586,6 +586,9 @@ function Main() {
             </button>
           </li>
         </ul>
+        <div style={{height:'73px', width: '273px', border:'1px solid #988e8e59', marginLeft:'2rem'}}>
+          <img style={{width: '100%', height:"100%"}} src="https://traffic-rta-ac.onrender.com/files/1710581602384_Screenshot_2024_03_16_at_2.29.37_PM.png" alt="" />
+        </div>
         <ul className="frminpts cleaner" id="plateInfoDivId">
           <li className="plateNoClass" style={{ display: "none" }}>
             <span className="inptcorns">
@@ -755,20 +758,21 @@ function Main() {
               <td style={{ textAlign: "center" }}>{data?.link}</td>
               <td style={{ textAlign: "center" }}></td>
               <td style={{ textAlign: "center" }}></td>
-              <td>
-                <p className="margb4">
-                  <a
+              <td style={{padding: '8px auto'}}>
+                <p className="margb4" style={{textAlign: 'center'}}>
+                  {/* <a
                     className="vewmore reg-btn-gray vewCertificate cboxElement"
                     href="#">
                     <em className="fxdwdth">View E-Certificate</em>
-                  </a>
+                  </a> */}
+                  <a href="#" className="gray-anchor" 
+              style={{color:'#777777', background: 'white', padding: '2px 11px', borderRadius: '18px', border: '1px solid #8080805c',fontSize:'13px', whiteSpace:'nowrap',  }} 
+              >View E-Certificate</a>
                 </p>
-                <p className="margb4">
-                  <a
-                    className="reg-btn-gray"
-                    href="https://traffic.rta.ac/assets/img/documents/1704197001_114_2SURTGXoLj/my-certificate.pdf">
-                    <em className="fxdwdth">Download</em>
-                  </a>
+                <p className="margb4" style={{textAlign:"center"}}>
+                <a href={path} className="gray-anchor" 
+              style={{color:'#777777', background: 'white', padding: '2px 11px', borderRadius: '18px', border: '1px solid #8080805c',fontSize:'13px'  }} 
+              >Download</a>
                 </p>
               </td>
             </tr>
