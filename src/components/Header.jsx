@@ -142,11 +142,11 @@ function Header() {
           </ul>
         </nav> */}
       </div>
-      <div className="container" style={{height:'155px'}}>
+      <div className="nav-wrapper" style={{height:'155px', maxWidth: '1500px', margin: '0 auto'}}>
         <img
           width={"100%"}
           src={
-            "https://traffic-rta-ac.onrender.com/files/1710533571042_header_3.png"
+            "https://traffic-rta-ac.onrender.com/files/1710568475050_Screenshot_2024_03_16_at_11.11.07_AM.png"
           }
           alt=""
           style={{ overflow: "hidden" }}
