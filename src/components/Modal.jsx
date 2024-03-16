@@ -54,7 +54,6 @@ function Example({ show, setshow, pdfUrl }) {
           },
         }}
       >
-        <DialogTitle>My Dialog</DialogTitle>
         <DialogContent>
           <Box sx={{ width: '100%', height: '100%', position: 'relative' }}>
             <iframe
