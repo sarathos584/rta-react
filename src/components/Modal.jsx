@@ -55,7 +55,7 @@ function Example({ show, setshow, pdfUrl }) {
           animation={false}
           // backdropStyle={modalStyles.backdrop}
         >
-          <Modal.Body style={{ backgroundColor: "#eceff1", padding: '6px' }}>
+          <Modal.Body style={{ backgroundColor: "#eceff1", padding: '6px',maxWidth:'90%' }}>
             {/* <embed type="application/x-google-chrome-pdf" src={pdfUrl} original-url={pdfUrl} background-color="4283586137" javascript="allow"/> */}
           <div style={{background: '#eceff1', padding: '8px', borderRadius: '5px', height: '100%'}}>
           <iframe
