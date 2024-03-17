@@ -6,15 +6,11 @@
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
-  margin: 0;
-  box-sizing: border-box;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
-
 }
 body {
   margin: 0;
-
 }
 article,
 aside,
@@ -1442,46 +1438,27 @@ pre code {
   max-height: 340px;
   overflow-y: scroll;
 }
-
-.wrapper {
-  width: 100%;
-  max-width: 1500px; /* Adjust as needed */
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box;
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
-
-
-/* Media queries for responsiveness */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .container {
-    flex-direction: row;
-    flex-wrap: wrap; /* Allow items to wrap */
-    justify-content: space-between;
+    width: 750px;
   }
 }
-
-@media (max-width: 576px) {
+@media (min-width: 992px) {
   .container {
-    width: 300px;
+    width: 970px;
   }
 }
-
-@media (max-width: 430px) {
-  .wrapper {
-    width: 420px; /* Adjust wrapper width for screen sizes below 430px */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
   }
 }
-
- 
-
-
-
-.container{
-  padding-right: 20px;
-}
-
-
 .container-fluid {
   padding-right: 15px;
   padding-left: 15px;
