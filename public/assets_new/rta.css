@@ -46,7 +46,7 @@ a:hover{text-decoration:underline}
 .margrit{margin-right:5px;}
 .normfnt{font:normal 11px verdana;}
 /**/
-.container{width:1040px; margin:0 auto; line-height:16px; padding:15px 0 0;}
+/* .container{width:1040px; margin:0 auto; line-height:16px; padding:15px 0 0;} */
 .content{clear:both; padding:0 0 30px;}
 .subcont{margin:15px 30px 0;}
 .hafwdth{width:47%;}

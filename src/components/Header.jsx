@@ -142,7 +142,7 @@ function Header() {
           </ul>
         </nav> */}
       </div>
-      <div className="nav-wrapper" style={{height:'155px', maxWidth: '1500px', margin: '0 auto'}}>
+      <div className="nav-wrapper" style={{height:'50px', maxWidth: '1450px', margin: '0 auto'}}>
         <img
           width={"100%"}
           src={
